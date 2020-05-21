@@ -15,7 +15,7 @@ A variety of programs that simulate different digital logic components that I de
 
 ## notes
 
-I made this in order to motivate myself to learn more digital design and to help myself debug the 8-bit breadboard computer I plan on building. The more I learn the more programs I plan on adding as I progress.
+I made this in order to motivate myself to learn more digital design and to help myself debug the 8-bit breadboard computer I plan on building. The more I learn the more programs I plan on adding as I progress. These programs are in no way meant to fully simulate each logic gate in each component but instead to simulate the overall input/output for debugging and educational purposes.
 
 ## images
 Binary to Decimal Converter
