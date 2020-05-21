@@ -3,12 +3,12 @@
 ## description
 Different programs that simulate different digital logic components that I designed to help debug my 8-bit breadboard computer.
 
-# programs list and function
+## programs list and function
 
 1. Binary to Decimal Converter - Input a binary number by checking the checkboxes for corresponding 1s then the result will display as you go.
 2. Full Adder with Carry In and Out Simulator - Input 2 8-Bit binary numbers into input A and B and a Carry in flag then the program will provide you the corresponding decimal and binary values as well as Carry out.
 
-# installation
+## installation
 
 1. Install PyQt5 library
 2. Clone the repo then run main.py for the programs you want to use
