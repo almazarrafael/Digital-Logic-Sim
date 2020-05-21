@@ -1,7 +1,7 @@
 # 8-Bit Digital Logic Simulators/Debuggers
 
 ## description
-Different programs that simulate different digital logic components that I designed to help debug my 8-bit breadboard computer.
+A variety of programs that simulate different digital logic components that I designed to help debug my 8-bit breadboard computer.
 
 ## programs list and function
 
