@@ -1,4 +1,4 @@
-# 8 Bit Digital Logic Debuggers
+# 8-Bit Digital Logic Debuggers
 
 ## description
 Different programs that simulate different digital logic components that I designed to help debug my 8-bit breadboard computer.
@@ -6,7 +6,7 @@ Different programs that simulate different digital logic components that I desig
 ## programs list and function
 
 1. Binary to Decimal Converter - Input a binary number by checking the checkboxes for corresponding 1s then the result will display as you go.
-2. Full Adder with Carry In and Out Simulator - Input 2 8-Bit binary numbers into input A and B and a Carry in flag then the program will provide you the corresponding decimal and binary values as well as Carry out.
+2. 8-Bit Adder with Carry In and Out Simulator - Input 2 8-Bit binary numbers into input A and B and a Carry in flag then the program will provide you the corresponding decimal and binary values as well as Carry out.
 
 ## installation
 
@@ -22,6 +22,6 @@ Binary to Decimal Converter
 
 ![Binary to Decimal](https://cdn.discordapp.com/attachments/563283331345678338/712890337349074994/unknown.png)
 
-Full Adder Simulator
+Adder Simulator
 
-![Full Adder Simulator](https://cdn.discordapp.com/attachments/563283331345678338/712890637581549638/unknown.png)
+![Adder Simulator](https://cdn.discordapp.com/attachments/563283331345678338/712947487400263680/unknown.png)
