@@ -5,7 +5,7 @@ A variety of programs that simulate different digital logic components that I de
 
 ## programs list and function
 
-1. __Binary to Decimal Converter__ - Input a binary number by checking the checkboxes for corresponding 1s then the result will display as you go.
+1. __8-Bit Binary to Decimal Converter__ - Input a binary number by checking the checkboxes for corresponding 1s then the result will display as you go.
 2. __Logic Gates Simulator__ - Input two binary values into each logic gate to see the desired result of each gate.
 3. __8-Bit Adder Simulator__ - Input 2 8-Bit binary numbers into input A and B and a Carry in flag then the program will provide you the corresponding decimal and binary values as well as Carry out.
 
