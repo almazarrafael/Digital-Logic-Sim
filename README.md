@@ -5,9 +5,9 @@ A variety of programs that simulate different digital logic components that I de
 
 ## programs list and function
 
-1. Binary to Decimal Converter - Input a binary number by checking the checkboxes for corresponding 1s then the result will display as you go.
-2. Logic Gates Simulator - Input two binary values into each logic gate to see the desired result of each gate.
-3. 8-Bit Adder with Carry In and Out Simulator - Input 2 8-Bit binary numbers into input A and B and a Carry in flag then the program will provide you the corresponding decimal and binary values as well as Carry out.
+1. __Binary to Decimal Converter__ - Input a binary number by checking the checkboxes for corresponding 1s then the result will display as you go.
+2. __Logic Gates Simulator__ - Input two binary values into each logic gate to see the desired result of each gate.
+3. __8-Bit Adder with Carry In and Out Simulator__ - Input 2 8-Bit binary numbers into input A and B and a Carry in flag then the program will provide you the corresponding decimal and binary values as well as Carry out.
 
 ## installation
 
@@ -20,13 +20,16 @@ I made this in order to motivate myself to learn more digital design and to help
 
 ## images
 Binary to Decimal Converter
+___
 
 ![Binary to Decimal](https://cdn.discordapp.com/attachments/563283331345678338/712890337349074994/unknown.png)
 
 Logic Gates Simulator
+___
 
 ![Logic Gates Simulator](https://cdn.discordapp.com/attachments/563283331345678338/713227938111160390/unknown.png)
 
 Adder Simulator
+___
 
 ![Adder Simulator](https://cdn.discordapp.com/attachments/563283331345678338/712947487400263680/unknown.png)
