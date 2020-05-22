@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="Nand-Gate">
+    <file>Nand-Gate.png</file>
+  </qresource>
+  <qresource prefix="Xor-Gate">
+    <file>Xor-Gate.png</file>
+  </qresource>
+  <qresource prefix="And-Gate">
+    <file>And-Gate.png</file>
+  </qresource>
+  <qresource prefix="Not-Gate">
+    <file>Not-Gate.png</file>
+  </qresource>
+  <qresource prefix="Or-Gate">
+    <file>Or-Gate.png</file>
+  </qresource>
+</RCC>
