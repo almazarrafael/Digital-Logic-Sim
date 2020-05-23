@@ -6,70 +6,89 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1226</width>
-    <height>789</height>
+    <width>1224</width>
+    <height>792</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>8-Bit 4-Way Demultiplexer - Rafael Almazar</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLCDNumber" name="A8">
+   <widget class="QFrame" name="frame_8">
     <property name="geometry">
      <rect>
-      <x>437</x>
-      <y>15</y>
-      <width>60</width>
-      <height>101</height>
+      <x>558</x>
+      <y>630</y>
+      <width>72</width>
+      <height>135</height>
      </rect>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: lightblue</string>
+    </property>
     <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
+     <enum>QFrame::Box</enum>
     </property>
-    <property name="digitCount">
-     <number>1</number>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
     </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
+    <property name="lineWidth">
+     <number>2</number>
     </property>
+    <widget class="QLCDNumber" name="S1">
+     <property name="geometry">
+      <rect>
+       <x>7</x>
+       <y>5</y>
+       <width>60</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="digitCount">
+      <number>1</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="S1In">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>110</y>
+       <width>16</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
    </widget>
-   <widget class="QCheckBox" name="AIn6">
+   <widget class="QCheckBox" name="AIn8">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>120</y>
+      <x>460</x>
+      <y>390</y>
       <width>16</width>
       <height>17</height>
      </rect>
     </property>
     <property name="text">
      <string/>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="A1">
-    <property name="geometry">
-     <rect>
-      <x>17</x>
-      <y>15</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
    <widget class="QLCDNumber" name="A2">
     <property name="geometry">
      <rect>
       <x>77</x>
-      <y>15</y>
+      <y>285</y>
       <width>60</width>
       <height>101</height>
      </rect>
@@ -84,11 +103,24 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="AIn1">
+   <widget class="QLabel" name="outputBDec_2">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>120</y>
+      <x>30</x>
+      <y>630</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="AIn7">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>390</y>
       <width>16</width>
       <height>17</height>
      </rect>
@@ -97,11 +129,217 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="A7">
+   <widget class="QLCDNumber" name="A6">
     <property name="geometry">
      <rect>
-      <x>377</x>
-      <y>15</y>
+      <x>317</x>
+      <y>285</y>
+      <width>60</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="digitCount">
+     <number>1</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="A5">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>285</y>
+      <width>60</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="digitCount">
+     <number>1</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_6">
+    <property name="geometry">
+     <rect>
+      <x>748</x>
+      <y>65</y>
+      <width>50</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_7">
+    <property name="geometry">
+     <rect>
+      <x>748</x>
+      <y>545</y>
+      <width>50</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="A4">
+    <property name="geometry">
+     <rect>
+      <x>197</x>
+      <y>285</y>
+      <width>60</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="digitCount">
+     <number>1</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>698</x>
+      <y>600</y>
+      <width>20</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="AIn6">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>390</y>
+      <width>16</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="A8">
+    <property name="geometry">
+     <rect>
+      <x>437</x>
+      <y>285</y>
+      <width>60</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="digitCount">
+     <number>1</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>660</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Output D Decimal Value</string>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="A3">
+    <property name="geometry">
+     <rect>
+      <x>137</x>
+      <y>285</y>
+      <width>60</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="digitCount">
+     <number>1</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>280</y>
+      <width>481</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: lightblue</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="A1">
+    <property name="geometry">
+     <rect>
+      <x>17</x>
+      <y>285</y>
       <width>60</width>
       <height>101</height>
      </rect>
@@ -120,7 +358,7 @@
     <property name="geometry">
      <rect>
       <x>220</x>
-      <y>120</y>
+      <y>390</y>
       <width>16</width>
       <height>17</height>
      </rect>
@@ -129,270 +367,24 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="A6">
+   <widget class="QLabel" name="label_15">
     <property name="geometry">
      <rect>
-      <x>317</x>
-      <y>15</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="AIn3">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>120</y>
-      <width>16</width>
-      <height>17</height>
+      <x>30</x>
+      <y>610</y>
+      <width>121</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>Output C Decimal Value:</string>
     </property>
    </widget>
-   <widget class="QFrame" name="frame">
-    <property name="geometry">
-     <rect>
-      <x>17</x>
-      <y>15</y>
-      <width>481</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: lightblue</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Panel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="midLineWidth">
-     <number>0</number>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="AIn2">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>120</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="AIn7">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>120</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="AIn8">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>120</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="A5">
-    <property name="geometry">
-     <rect>
-      <x>257</x>
-      <y>15</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="AIn5">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>120</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="A4">
-    <property name="geometry">
-     <rect>
-      <x>197</x>
-      <y>15</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="A3">
-    <property name="geometry">
-     <rect>
-      <x>137</x>
-      <y>15</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="B3">
-    <property name="geometry">
-     <rect>
-      <x>137</x>
-      <y>175</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="BIn6">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>280</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="BIn1">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>280</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="BIn2">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>280</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="BIn5">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>280</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="B1">
-    <property name="geometry">
-     <rect>
-      <x>17</x>
-      <y>175</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="B7">
+   <widget class="QLCDNumber" name="A7">
     <property name="geometry">
      <rect>
       <x>377</x>
-      <y>175</y>
+      <y>285</y>
       <width>60</width>
       <height>101</height>
      </rect>
@@ -407,151 +399,62 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="B6">
+   <widget class="QFrame" name="frame_9">
     <property name="geometry">
      <rect>
-      <x>317</x>
-      <y>175</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="BIn7">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>280</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="BIn8">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>280</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="B8">
-    <property name="geometry">
-     <rect>
-      <x>437</x>
-      <y>175</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="BIn4">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>280</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="B4">
-    <property name="geometry">
-     <rect>
-      <x>197</x>
-      <y>175</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="B2">
-    <property name="geometry">
-     <rect>
-      <x>77</x>
-      <y>175</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="BIn3">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>280</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame_2">
-    <property name="geometry">
-     <rect>
-      <x>17</x>
-      <y>175</y>
-      <width>481</width>
-      <height>131</height>
+      <x>20</x>
+      <y>505</y>
+      <width>151</width>
+      <height>261</height>
      </rect>
     </property>
     <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: lightblue</string>
+     <bool>true</bool>
     </property>
     <property name="frameShape">
-     <enum>QFrame::Panel</enum>
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>1</number>
+    </property>
+    <widget class="QLabel" name="inputDec">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Input Decimal Value</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>583</x>
+      <y>600</y>
+      <width>20</width>
+      <height>30</height>
+     </rect>
     </property>
     <property name="frameShadow">
      <enum>QFrame::Plain</enum>
@@ -559,373 +462,31 @@
     <property name="lineWidth">
      <number>2</number>
     </property>
-    <property name="midLineWidth">
-     <number>0</number>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="B5">
+   <widget class="QLabel" name="label_9">
     <property name="geometry">
      <rect>
-      <x>257</x>
-      <y>175</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="DIn1">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>600</y>
-      <width>16</width>
-      <height>17</height>
+      <x>30</x>
+      <y>510</y>
+      <width>121</width>
+      <height>16</height>
      </rect>
     </property>
     <property name="text">
-     <string/>
+     <string>Output A Decimal Value:</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="CIn2">
+   <widget class="Line" name="line_4">
     <property name="geometry">
      <rect>
-      <x>100</x>
-      <y>440</y>
-      <width>16</width>
-      <height>17</height>
+      <x>748</x>
+      <y>385</y>
+      <width>50</width>
+      <height>3</height>
      </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="CIn4">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>440</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="DIn2">
-    <property name="geometry">
-     <rect>
-      <x>100</x>
-      <y>600</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="CIn8">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>440</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="C8">
-    <property name="geometry">
-     <rect>
-      <x>437</x>
-      <y>335</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="CIn1">
-    <property name="geometry">
-     <rect>
-      <x>40</x>
-      <y>440</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="C6">
-    <property name="geometry">
-     <rect>
-      <x>317</x>
-      <y>335</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="C3">
-    <property name="geometry">
-     <rect>
-      <x>137</x>
-      <y>335</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="CIn3">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>440</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="C1">
-    <property name="geometry">
-     <rect>
-      <x>17</x>
-      <y>335</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="DIn6">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>600</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="DIn3">
-    <property name="geometry">
-     <rect>
-      <x>160</x>
-      <y>600</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="DIn5">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>600</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="D2">
-    <property name="geometry">
-     <rect>
-      <x>77</x>
-      <y>495</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="D7">
-    <property name="geometry">
-     <rect>
-      <x>377</x>
-      <y>495</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="C5">
-    <property name="geometry">
-     <rect>
-      <x>257</x>
-      <y>335</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="D8">
-    <property name="geometry">
-     <rect>
-      <x>437</x>
-      <y>495</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="D6">
-    <property name="geometry">
-     <rect>
-      <x>317</x>
-      <y>495</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="CIn7">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>440</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="CIn5">
-    <property name="geometry">
-     <rect>
-      <x>280</x>
-      <y>440</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame_3">
-    <property name="geometry">
-     <rect>
-      <x>17</x>
-      <y>495</y>
-      <width>481</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: lightblue</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Panel</enum>
     </property>
     <property name="frameShadow">
      <enum>QFrame::Plain</enum>
@@ -933,227 +494,14 @@
     <property name="lineWidth">
      <number>2</number>
     </property>
-    <property name="midLineWidth">
-     <number>0</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="D5">
-    <property name="geometry">
-     <rect>
-      <x>257</x>
-      <y>495</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame_4">
-    <property name="geometry">
-     <rect>
-      <x>17</x>
-      <y>335</y>
-      <width>481</width>
-      <height>131</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: lightblue</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Panel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="midLineWidth">
-     <number>0</number>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="D4">
-    <property name="geometry">
-     <rect>
-      <x>197</x>
-      <y>495</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="D1">
-    <property name="geometry">
-     <rect>
-      <x>17</x>
-      <y>495</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="CIn6">
-    <property name="geometry">
-     <rect>
-      <x>340</x>
-      <y>440</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="C2">
-    <property name="geometry">
-     <rect>
-      <x>77</x>
-      <y>335</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="D3">
-    <property name="geometry">
-     <rect>
-      <x>137</x>
-      <y>495</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="DIn7">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>600</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="C7">
-    <property name="geometry">
-     <rect>
-      <x>377</x>
-      <y>335</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QLCDNumber" name="C4">
-    <property name="geometry">
-     <rect>
-      <x>197</x>
-      <y>335</y>
-      <width>60</width>
-      <height>101</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::NoFrame</enum>
-    </property>
-    <property name="digitCount">
-     <number>1</number>
-    </property>
-    <property name="segmentStyle">
-     <enum>QLCDNumber::Flat</enum>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="DIn4">
-    <property name="geometry">
-     <rect>
-      <x>220</x>
-      <y>600</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="DIn8">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>600</y>
-      <width>16</width>
-      <height>17</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
     </property>
    </widget>
    <widget class="QFrame" name="frame_5">
     <property name="geometry">
      <rect>
-      <x>550</x>
+      <x>548</x>
       <y>40</y>
       <width>200</width>
       <height>561</height>
@@ -1174,7 +522,7 @@
     <property name="lineWidth">
      <number>2</number>
     </property>
-    <widget class="QLabel" name="label_4">
+    <widget class="QLabel" name="label_10">
      <property name="geometry">
       <rect>
        <x>40</x>
@@ -1192,7 +540,7 @@
       <string>S1</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_5">
+    <widget class="QLabel" name="label_12">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -1210,11 +558,109 @@
       <string>S0</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_6">
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>20</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>A out</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>180</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>B out</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>340</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>C out</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>500</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>D out</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>220</y>
+       <width>161</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>20</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>8-Bit 4-Way Demultiplexer</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>20</y>
+       <y>290</y>
        <width>31</width>
        <height>16</height>
       </rect>
@@ -1228,144 +674,24 @@
       <string>A in</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_7">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>180</y>
-       <width>31</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>B in</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_8">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>340</y>
-       <width>31</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>C in</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_19">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>500</y>
-       <width>31</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>11</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>D in</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_3">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>220</y>
-       <width>131</width>
-       <height>111</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>20</pointsize>
-       <weight>50</weight>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>8-Bit         4-Way Multiplexer</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignCenter</set>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-    </widget>
    </widget>
-   <widget class="QFrame" name="frame_6">
+   <widget class="QCheckBox" name="AIn5">
     <property name="geometry">
      <rect>
-      <x>800</x>
-      <y>263</y>
-      <width>411</width>
-      <height>111</height>
+      <x>280</x>
+      <y>390</y>
+      <width>16</width>
+      <height>17</height>
      </rect>
     </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
+    <property name="text">
+     <string/>
     </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: lightblue</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Panel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="midLineWidth">
-     <number>0</number>
-    </property>
-    <widget class="QLCDNumber" name="output">
-     <property name="geometry">
-      <rect>
-       <x>2</x>
-       <y>2</y>
-       <width>401</width>
-       <height>101</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Plain</enum>
-     </property>
-     <property name="digitCount">
-      <number>8</number>
-     </property>
-     <property name="segmentStyle">
-      <enum>QLCDNumber::Flat</enum>
-     </property>
-     <property name="value" stdset="0">
-      <double>99999999.000000000000000</double>
-     </property>
-    </widget>
    </widget>
    <widget class="QFrame" name="frame_7">
     <property name="geometry">
      <rect>
-      <x>670</x>
+      <x>668</x>
       <y>630</y>
       <width>72</width>
       <height>135</height>
@@ -1405,7 +731,7 @@
       <enum>QLCDNumber::Flat</enum>
      </property>
     </widget>
-    <widget class="QCheckBox" name="S2In">
+    <widget class="QCheckBox" name="S0In">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1419,258 +745,11 @@
      </property>
     </widget>
    </widget>
-   <widget class="QFrame" name="frame_8">
+   <widget class="Line" name="line_5">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>630</y>
-      <width>72</width>
-      <height>135</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: lightblue</string>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <widget class="QLCDNumber" name="lcdNumber_35">
-     <property name="geometry">
-      <rect>
-       <x>7</x>
-       <y>5</y>
-       <width>60</width>
-       <height>101</height>
-      </rect>
-     </property>
-     <property name="frameShape">
-      <enum>QFrame::NoFrame</enum>
-     </property>
-     <property name="digitCount">
-      <number>1</number>
-     </property>
-     <property name="segmentStyle">
-      <enum>QLCDNumber::Flat</enum>
-     </property>
-    </widget>
-    <widget class="QCheckBox" name="S1In">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>110</y>
-       <width>16</width>
-       <height>17</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string/>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QLabel" name="label_10">
-    <property name="geometry">
-     <rect>
-      <x>1060</x>
-      <y>560</y>
-      <width>121</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Input B Decimal Value:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="InADec">
-    <property name="geometry">
-     <rect>
-      <x>1060</x>
-      <y>530</y>
-      <width>121</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QFrame" name="frame_9">
-    <property name="geometry">
-     <rect>
-      <x>1050</x>
-      <y>505</y>
-      <width>151</width>
-      <height>261</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>true</bool>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::Box</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>1</number>
-    </property>
-    <widget class="QLabel" name="OutputDec">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>230</y>
-       <width>121</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>0</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label_17">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>210</y>
-       <width>121</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Output Decimal Value</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QLabel" name="label_9">
-    <property name="geometry">
-     <rect>
-      <x>1060</x>
-      <y>510</y>
-      <width>121</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Input A Decimal Value:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_11">
-    <property name="geometry">
-     <rect>
-      <x>1060</x>
-      <y>660</y>
-      <width>121</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Input D Decimal Value</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_15">
-    <property name="geometry">
-     <rect>
-      <x>1060</x>
-      <y>610</y>
-      <width>121</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Input C Decimal Value:</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="InBDec">
-    <property name="geometry">
-     <rect>
-      <x>1060</x>
-      <y>580</y>
-      <width>121</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="InDDec">
-    <property name="geometry">
-     <rect>
-      <x>1060</x>
-      <y>680</y>
-      <width>121</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="InCDec">
-    <property name="geometry">
-     <rect>
-      <x>1060</x>
-      <y>630</y>
-      <width>121</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>0</string>
-    </property>
-   </widget>
-   <widget class="Line" name="line">
-    <property name="geometry">
-     <rect>
-      <x>585</x>
-      <y>600</y>
-      <width>20</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
-   <widget class="Line" name="line_2">
-    <property name="geometry">
-     <rect>
-      <x>700</x>
-      <y>600</y>
-      <width>20</width>
-      <height>30</height>
-     </rect>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
-   <widget class="Line" name="line_3">
-    <property name="geometry">
-     <rect>
-      <x>750</x>
-      <y>320</y>
+      <x>748</x>
+      <y>225</y>
       <width>50</width>
       <height>3</height>
      </rect>
@@ -1685,196 +764,375 @@
      <enum>Qt::Horizontal</enum>
     </property>
    </widget>
-   <widget class="Line" name="line_4">
+   <widget class="QLabel" name="outputBDec">
     <property name="geometry">
      <rect>
-      <x>496</x>
-      <y>385</y>
-      <width>55</width>
-      <height>3</height>
-     </rect>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="Line" name="line_5">
-    <property name="geometry">
-     <rect>
-      <x>496</x>
-      <y>225</y>
-      <width>55</width>
-      <height>3</height>
-     </rect>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="Line" name="line_6">
-    <property name="geometry">
-     <rect>
-      <x>496</x>
-      <y>65</y>
-      <width>55</width>
-      <height>3</height>
-     </rect>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="Line" name="line_7">
-    <property name="geometry">
-     <rect>
-      <x>496</x>
-      <y>545</y>
-      <width>55</width>
-      <height>3</height>
-     </rect>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Plain</enum>
-    </property>
-    <property name="lineWidth">
-     <number>2</number>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_20">
-    <property name="geometry">
-     <rect>
-      <x>730</x>
-      <y>310</y>
-      <width>31</width>
+      <x>30</x>
+      <y>580</y>
+      <width>121</width>
       <height>16</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-     </font>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="outputDDec">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>680</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
     </property>
     <property name="text">
-     <string>Q</string>
+     <string>0</string>
     </property>
+   </widget>
+   <widget class="QCheckBox" name="AIn2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>390</y>
+      <width>16</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="outputADec">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>530</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_29">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>560</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Output B Decimal Value:</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="AIn1">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>390</y>
+      <width>16</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>498</x>
+      <y>335</y>
+      <width>50</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="AIn3">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>390</y>
+      <width>16</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame_10">
+    <property name="geometry">
+     <rect>
+      <x>798</x>
+      <y>10</y>
+      <width>411</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: lightblue</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <widget class="QLCDNumber" name="outputA">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>2</y>
+       <width>401</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="digitCount">
+      <number>8</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+     <property name="value" stdset="0">
+      <double>99999999.000000000000000</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_11">
+    <property name="geometry">
+     <rect>
+      <x>798</x>
+      <y>170</y>
+      <width>411</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: lightblue</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <widget class="QLCDNumber" name="outputB">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>2</y>
+       <width>401</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="digitCount">
+      <number>8</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+     <property name="value" stdset="0">
+      <double>99999999.000000000000000</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_12">
+    <property name="geometry">
+     <rect>
+      <x>798</x>
+      <y>330</y>
+      <width>411</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: lightblue</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <widget class="QLCDNumber" name="outputC">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>2</y>
+       <width>401</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="digitCount">
+      <number>8</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+     <property name="value" stdset="0">
+      <double>99999999.000000000000000</double>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_13">
+    <property name="geometry">
+     <rect>
+      <x>798</x>
+      <y>490</y>
+      <width>411</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: lightblue</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <widget class="QLCDNumber" name="outputD">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>2</y>
+       <width>401</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="digitCount">
+      <number>8</number>
+     </property>
+     <property name="segmentStyle">
+      <enum>QLCDNumber::Flat</enum>
+     </property>
+     <property name="value" stdset="0">
+      <double>99999999.000000000000000</double>
+     </property>
+    </widget>
    </widget>
    <zorder>frame_9</zorder>
    <zorder>frame_3</zorder>
-   <zorder>frame_4</zorder>
-   <zorder>frame</zorder>
-   <zorder>frame_2</zorder>
-   <zorder>A8</zorder>
-   <zorder>AIn6</zorder>
-   <zorder>A1</zorder>
-   <zorder>A2</zorder>
-   <zorder>AIn1</zorder>
-   <zorder>A7</zorder>
-   <zorder>AIn4</zorder>
-   <zorder>A6</zorder>
-   <zorder>AIn3</zorder>
-   <zorder>AIn2</zorder>
-   <zorder>AIn7</zorder>
-   <zorder>AIn8</zorder>
-   <zorder>A5</zorder>
-   <zorder>AIn5</zorder>
-   <zorder>A4</zorder>
-   <zorder>A3</zorder>
-   <zorder>B3</zorder>
-   <zorder>BIn6</zorder>
-   <zorder>BIn1</zorder>
-   <zorder>BIn2</zorder>
-   <zorder>BIn5</zorder>
-   <zorder>B1</zorder>
-   <zorder>B7</zorder>
-   <zorder>B6</zorder>
-   <zorder>BIn7</zorder>
-   <zorder>BIn8</zorder>
-   <zorder>B8</zorder>
-   <zorder>BIn4</zorder>
-   <zorder>B4</zorder>
-   <zorder>B2</zorder>
-   <zorder>BIn3</zorder>
-   <zorder>B5</zorder>
-   <zorder>DIn1</zorder>
-   <zorder>CIn2</zorder>
-   <zorder>CIn4</zorder>
-   <zorder>DIn2</zorder>
-   <zorder>CIn8</zorder>
-   <zorder>C8</zorder>
-   <zorder>CIn1</zorder>
-   <zorder>C6</zorder>
-   <zorder>C3</zorder>
-   <zorder>CIn3</zorder>
-   <zorder>C1</zorder>
-   <zorder>DIn6</zorder>
-   <zorder>DIn3</zorder>
-   <zorder>DIn5</zorder>
-   <zorder>D2</zorder>
-   <zorder>D7</zorder>
-   <zorder>C5</zorder>
-   <zorder>D8</zorder>
-   <zorder>D6</zorder>
-   <zorder>CIn7</zorder>
-   <zorder>CIn5</zorder>
-   <zorder>D5</zorder>
-   <zorder>D4</zorder>
-   <zorder>D1</zorder>
-   <zorder>CIn6</zorder>
-   <zorder>C2</zorder>
-   <zorder>D3</zorder>
-   <zorder>DIn7</zorder>
-   <zorder>C7</zorder>
-   <zorder>C4</zorder>
-   <zorder>DIn4</zorder>
-   <zorder>DIn8</zorder>
    <zorder>frame_5</zorder>
-   <zorder>frame_6</zorder>
-   <zorder>frame_7</zorder>
    <zorder>frame_8</zorder>
-   <zorder>label_10</zorder>
-   <zorder>InADec</zorder>
-   <zorder>label_9</zorder>
-   <zorder>label_11</zorder>
-   <zorder>label_15</zorder>
-   <zorder>InBDec</zorder>
-   <zorder>InDDec</zorder>
-   <zorder>InCDec</zorder>
-   <zorder>line</zorder>
-   <zorder>line_2</zorder>
-   <zorder>line_3</zorder>
-   <zorder>line_4</zorder>
-   <zorder>line_5</zorder>
+   <zorder>AIn8</zorder>
+   <zorder>A2</zorder>
+   <zorder>outputBDec_2</zorder>
+   <zorder>AIn7</zorder>
+   <zorder>A6</zorder>
+   <zorder>A5</zorder>
    <zorder>line_6</zorder>
    <zorder>line_7</zorder>
-   <zorder>label_20</zorder>
+   <zorder>A4</zorder>
+   <zorder>line_2</zorder>
+   <zorder>AIn6</zorder>
+   <zorder>A8</zorder>
+   <zorder>label_11</zorder>
+   <zorder>A3</zorder>
+   <zorder>A1</zorder>
+   <zorder>AIn4</zorder>
+   <zorder>label_15</zorder>
+   <zorder>A7</zorder>
+   <zorder>line</zorder>
+   <zorder>label_9</zorder>
+   <zorder>line_4</zorder>
+   <zorder>AIn5</zorder>
+   <zorder>frame_7</zorder>
+   <zorder>line_5</zorder>
+   <zorder>outputBDec</zorder>
+   <zorder>outputDDec</zorder>
+   <zorder>AIn2</zorder>
+   <zorder>outputADec</zorder>
+   <zorder>label_29</zorder>
+   <zorder>AIn1</zorder>
+   <zorder>line_3</zorder>
+   <zorder>AIn3</zorder>
+   <zorder>frame_10</zorder>
+   <zorder>frame_11</zorder>
+   <zorder>frame_12</zorder>
+   <zorder>frame_13</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1226</width>
+     <width>1224</width>
      <height>21</height>
     </rect>
    </property>
