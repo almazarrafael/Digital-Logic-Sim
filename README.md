@@ -29,6 +29,16 @@ ___
 
 ![Logic Gates Simulator](https://cdn.discordapp.com/attachments/563283331345678338/713227938111160390/unknown.png)
 
+Multiplexer Simulator
+___
+
+![Multiplexer Simulator](https://cdn.discordapp.com/attachments/563283331345678338/713625613155434546/unknown.png)
+
+Demultiplexer Simulator
+___
+
+![Demultiplexer Simulator](https://cdn.discordapp.com/attachments/563283331345678338/713625874104320051/unknown.png)
+
 Adder Simulator
 ___
 
