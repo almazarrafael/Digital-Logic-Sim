@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLCDNumber" name="lcdNumber_8">
+   <widget class="QLCDNumber" name="A8">
     <property name="geometry">
      <rect>
       <x>437</x>
@@ -33,7 +33,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_6">
+   <widget class="QCheckBox" name="AIn6">
     <property name="geometry">
      <rect>
       <x>340</x>
@@ -46,7 +46,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber">
+   <widget class="QLCDNumber" name="A1">
     <property name="geometry">
      <rect>
       <x>17</x>
@@ -65,7 +65,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_2">
+   <widget class="QLCDNumber" name="A2">
     <property name="geometry">
      <rect>
       <x>77</x>
@@ -84,7 +84,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox">
+   <widget class="QCheckBox" name="AIn1">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -97,7 +97,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_7">
+   <widget class="QLCDNumber" name="A7">
     <property name="geometry">
      <rect>
       <x>377</x>
@@ -116,7 +116,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_4">
+   <widget class="QCheckBox" name="AIn4">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -129,7 +129,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_6">
+   <widget class="QLCDNumber" name="A6">
     <property name="geometry">
      <rect>
       <x>317</x>
@@ -148,7 +148,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_3">
+   <widget class="QCheckBox" name="AIn3">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -189,7 +189,7 @@
      <number>0</number>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_2">
+   <widget class="QCheckBox" name="AIn2">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -202,7 +202,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_7">
+   <widget class="QCheckBox" name="AIn7">
     <property name="geometry">
      <rect>
       <x>400</x>
@@ -215,7 +215,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_8">
+   <widget class="QCheckBox" name="AIn8">
     <property name="geometry">
      <rect>
       <x>460</x>
@@ -228,7 +228,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_5">
+   <widget class="QLCDNumber" name="A5">
     <property name="geometry">
      <rect>
       <x>257</x>
@@ -247,7 +247,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_5">
+   <widget class="QCheckBox" name="AIn5">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -260,7 +260,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_4">
+   <widget class="QLCDNumber" name="A4">
     <property name="geometry">
      <rect>
       <x>197</x>
@@ -279,7 +279,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_3">
+   <widget class="QLCDNumber" name="A3">
     <property name="geometry">
      <rect>
       <x>137</x>
@@ -298,7 +298,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_9">
+   <widget class="QLCDNumber" name="B3">
     <property name="geometry">
      <rect>
       <x>137</x>
@@ -317,7 +317,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_9">
+   <widget class="QCheckBox" name="BIn6">
     <property name="geometry">
      <rect>
       <x>340</x>
@@ -330,7 +330,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_10">
+   <widget class="QCheckBox" name="BIn1">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -343,7 +343,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_11">
+   <widget class="QCheckBox" name="BIn2">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -356,7 +356,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_12">
+   <widget class="QCheckBox" name="BIn5">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -369,7 +369,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_10">
+   <widget class="QLCDNumber" name="B1">
     <property name="geometry">
      <rect>
       <x>17</x>
@@ -388,7 +388,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_11">
+   <widget class="QLCDNumber" name="B7">
     <property name="geometry">
      <rect>
       <x>377</x>
@@ -407,7 +407,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_12">
+   <widget class="QLCDNumber" name="B6">
     <property name="geometry">
      <rect>
       <x>317</x>
@@ -426,7 +426,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_13">
+   <widget class="QCheckBox" name="BIn7">
     <property name="geometry">
      <rect>
       <x>400</x>
@@ -439,7 +439,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_14">
+   <widget class="QCheckBox" name="BIn8">
     <property name="geometry">
      <rect>
       <x>460</x>
@@ -452,7 +452,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_13">
+   <widget class="QLCDNumber" name="B8">
     <property name="geometry">
      <rect>
       <x>437</x>
@@ -471,7 +471,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_15">
+   <widget class="QCheckBox" name="BIn4">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -484,7 +484,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_14">
+   <widget class="QLCDNumber" name="B4">
     <property name="geometry">
      <rect>
       <x>197</x>
@@ -503,7 +503,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_15">
+   <widget class="QLCDNumber" name="B2">
     <property name="geometry">
      <rect>
       <x>77</x>
@@ -522,7 +522,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_16">
+   <widget class="QCheckBox" name="BIn3">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -563,7 +563,7 @@
      <number>0</number>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_16">
+   <widget class="QLCDNumber" name="B5">
     <property name="geometry">
      <rect>
       <x>257</x>
@@ -582,7 +582,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_17">
+   <widget class="QCheckBox" name="DIn1">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -595,7 +595,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_18">
+   <widget class="QCheckBox" name="CIn2">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -608,7 +608,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_19">
+   <widget class="QCheckBox" name="CIn4">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -621,7 +621,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_20">
+   <widget class="QCheckBox" name="DIn2">
     <property name="geometry">
      <rect>
       <x>100</x>
@@ -634,7 +634,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_21">
+   <widget class="QCheckBox" name="CIn8">
     <property name="geometry">
      <rect>
       <x>460</x>
@@ -647,7 +647,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_17">
+   <widget class="QLCDNumber" name="C8">
     <property name="geometry">
      <rect>
       <x>437</x>
@@ -666,7 +666,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_22">
+   <widget class="QCheckBox" name="CIn1">
     <property name="geometry">
      <rect>
       <x>40</x>
@@ -679,7 +679,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_18">
+   <widget class="QLCDNumber" name="C6">
     <property name="geometry">
      <rect>
       <x>317</x>
@@ -698,7 +698,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_19">
+   <widget class="QLCDNumber" name="C3">
     <property name="geometry">
      <rect>
       <x>137</x>
@@ -717,7 +717,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_23">
+   <widget class="QCheckBox" name="CIn3">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -730,7 +730,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_20">
+   <widget class="QLCDNumber" name="C1">
     <property name="geometry">
      <rect>
       <x>17</x>
@@ -749,7 +749,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_24">
+   <widget class="QCheckBox" name="DIn6">
     <property name="geometry">
      <rect>
       <x>340</x>
@@ -762,7 +762,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_25">
+   <widget class="QCheckBox" name="DIn3">
     <property name="geometry">
      <rect>
       <x>160</x>
@@ -775,7 +775,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_26">
+   <widget class="QCheckBox" name="DIn5">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -788,7 +788,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_21">
+   <widget class="QLCDNumber" name="D2">
     <property name="geometry">
      <rect>
       <x>77</x>
@@ -807,7 +807,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_22">
+   <widget class="QLCDNumber" name="D7">
     <property name="geometry">
      <rect>
       <x>377</x>
@@ -826,7 +826,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_23">
+   <widget class="QLCDNumber" name="C5">
     <property name="geometry">
      <rect>
       <x>257</x>
@@ -845,7 +845,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_24">
+   <widget class="QLCDNumber" name="D8">
     <property name="geometry">
      <rect>
       <x>437</x>
@@ -864,7 +864,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_25">
+   <widget class="QLCDNumber" name="D6">
     <property name="geometry">
      <rect>
       <x>317</x>
@@ -883,7 +883,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_27">
+   <widget class="QCheckBox" name="CIn7">
     <property name="geometry">
      <rect>
       <x>400</x>
@@ -896,7 +896,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_28">
+   <widget class="QCheckBox" name="CIn5">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -937,7 +937,7 @@
      <number>0</number>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_26">
+   <widget class="QLCDNumber" name="D5">
     <property name="geometry">
      <rect>
       <x>257</x>
@@ -984,7 +984,7 @@
      <number>0</number>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_27">
+   <widget class="QLCDNumber" name="D4">
     <property name="geometry">
      <rect>
       <x>197</x>
@@ -1003,7 +1003,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_28">
+   <widget class="QLCDNumber" name="D1">
     <property name="geometry">
      <rect>
       <x>17</x>
@@ -1022,7 +1022,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_29">
+   <widget class="QCheckBox" name="CIn6">
     <property name="geometry">
      <rect>
       <x>340</x>
@@ -1035,7 +1035,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_29">
+   <widget class="QLCDNumber" name="C2">
     <property name="geometry">
      <rect>
       <x>77</x>
@@ -1054,7 +1054,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_30">
+   <widget class="QLCDNumber" name="D3">
     <property name="geometry">
      <rect>
       <x>137</x>
@@ -1073,7 +1073,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_30">
+   <widget class="QCheckBox" name="DIn7">
     <property name="geometry">
      <rect>
       <x>400</x>
@@ -1086,7 +1086,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_31">
+   <widget class="QLCDNumber" name="C7">
     <property name="geometry">
      <rect>
       <x>377</x>
@@ -1105,7 +1105,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QLCDNumber" name="lcdNumber_32">
+   <widget class="QLCDNumber" name="C4">
     <property name="geometry">
      <rect>
       <x>197</x>
@@ -1124,7 +1124,7 @@
      <enum>QLCDNumber::Flat</enum>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_31">
+   <widget class="QCheckBox" name="DIn4">
     <property name="geometry">
      <rect>
       <x>220</x>
@@ -1137,7 +1137,7 @@
      <string/>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_32">
+   <widget class="QCheckBox" name="DIn8">
     <property name="geometry">
      <rect>
       <x>460</x>
@@ -1336,7 +1336,7 @@
     <property name="midLineWidth">
      <number>0</number>
     </property>
-    <widget class="QLCDNumber" name="lcdNumber_33">
+    <widget class="QLCDNumber" name="output">
      <property name="geometry">
       <rect>
        <x>2</x>
@@ -1386,7 +1386,7 @@
     <property name="lineWidth">
      <number>2</number>
     </property>
-    <widget class="QLCDNumber" name="lcdNumber_34">
+    <widget class="QLCDNumber" name="S0">
      <property name="geometry">
       <rect>
        <x>7</x>
@@ -1405,7 +1405,7 @@
       <enum>QLCDNumber::Flat</enum>
      </property>
     </widget>
-    <widget class="QCheckBox" name="checkBox_33">
+    <widget class="QCheckBox" name="S2In">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1462,7 +1462,7 @@
       <enum>QLCDNumber::Flat</enum>
      </property>
     </widget>
-    <widget class="QCheckBox" name="checkBox_34">
+    <widget class="QCheckBox" name="S1In">
      <property name="geometry">
       <rect>
        <x>30</x>
@@ -1489,7 +1489,7 @@
      <string>Input B Decimal Value:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_12">
+   <widget class="QLabel" name="InADec">
     <property name="geometry">
      <rect>
       <x>1060</x>
@@ -1523,7 +1523,7 @@
     <property name="lineWidth">
      <number>1</number>
     </property>
-    <widget class="QLabel" name="label_18">
+    <widget class="QLabel" name="OutputDec">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -1589,7 +1589,7 @@
      <string>Input C Decimal Value:</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_13">
+   <widget class="QLabel" name="InBDec">
     <property name="geometry">
      <rect>
       <x>1060</x>
@@ -1602,7 +1602,7 @@
      <string>0</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_14">
+   <widget class="QLabel" name="InDDec">
     <property name="geometry">
      <rect>
       <x>1060</x>
@@ -1615,7 +1615,7 @@
      <string>0</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_16">
+   <widget class="QLabel" name="InCDec">
     <property name="geometry">
      <rect>
       <x>1060</x>
@@ -1784,82 +1784,82 @@
    <zorder>frame_4</zorder>
    <zorder>frame</zorder>
    <zorder>frame_2</zorder>
-   <zorder>lcdNumber_8</zorder>
-   <zorder>checkBox_6</zorder>
-   <zorder>lcdNumber</zorder>
-   <zorder>lcdNumber_2</zorder>
-   <zorder>checkBox</zorder>
-   <zorder>lcdNumber_7</zorder>
-   <zorder>checkBox_4</zorder>
-   <zorder>lcdNumber_6</zorder>
-   <zorder>checkBox_3</zorder>
-   <zorder>checkBox_2</zorder>
-   <zorder>checkBox_7</zorder>
-   <zorder>checkBox_8</zorder>
-   <zorder>lcdNumber_5</zorder>
-   <zorder>checkBox_5</zorder>
-   <zorder>lcdNumber_4</zorder>
-   <zorder>lcdNumber_3</zorder>
-   <zorder>lcdNumber_9</zorder>
-   <zorder>checkBox_9</zorder>
-   <zorder>checkBox_10</zorder>
-   <zorder>checkBox_11</zorder>
-   <zorder>checkBox_12</zorder>
-   <zorder>lcdNumber_10</zorder>
-   <zorder>lcdNumber_11</zorder>
-   <zorder>lcdNumber_12</zorder>
-   <zorder>checkBox_13</zorder>
-   <zorder>checkBox_14</zorder>
-   <zorder>lcdNumber_13</zorder>
-   <zorder>checkBox_15</zorder>
-   <zorder>lcdNumber_14</zorder>
-   <zorder>lcdNumber_15</zorder>
-   <zorder>checkBox_16</zorder>
-   <zorder>lcdNumber_16</zorder>
-   <zorder>checkBox_17</zorder>
-   <zorder>checkBox_18</zorder>
-   <zorder>checkBox_19</zorder>
-   <zorder>checkBox_20</zorder>
-   <zorder>checkBox_21</zorder>
-   <zorder>lcdNumber_17</zorder>
-   <zorder>checkBox_22</zorder>
-   <zorder>lcdNumber_18</zorder>
-   <zorder>lcdNumber_19</zorder>
-   <zorder>checkBox_23</zorder>
-   <zorder>lcdNumber_20</zorder>
-   <zorder>checkBox_24</zorder>
-   <zorder>checkBox_25</zorder>
-   <zorder>checkBox_26</zorder>
-   <zorder>lcdNumber_21</zorder>
-   <zorder>lcdNumber_22</zorder>
-   <zorder>lcdNumber_23</zorder>
-   <zorder>lcdNumber_24</zorder>
-   <zorder>lcdNumber_25</zorder>
-   <zorder>checkBox_27</zorder>
-   <zorder>checkBox_28</zorder>
-   <zorder>lcdNumber_26</zorder>
-   <zorder>lcdNumber_27</zorder>
-   <zorder>lcdNumber_28</zorder>
-   <zorder>checkBox_29</zorder>
-   <zorder>lcdNumber_29</zorder>
-   <zorder>lcdNumber_30</zorder>
-   <zorder>checkBox_30</zorder>
-   <zorder>lcdNumber_31</zorder>
-   <zorder>lcdNumber_32</zorder>
-   <zorder>checkBox_31</zorder>
-   <zorder>checkBox_32</zorder>
+   <zorder>A8</zorder>
+   <zorder>AIn6</zorder>
+   <zorder>A1</zorder>
+   <zorder>A2</zorder>
+   <zorder>AIn1</zorder>
+   <zorder>A7</zorder>
+   <zorder>AIn4</zorder>
+   <zorder>A6</zorder>
+   <zorder>AIn3</zorder>
+   <zorder>AIn2</zorder>
+   <zorder>AIn7</zorder>
+   <zorder>AIn8</zorder>
+   <zorder>A5</zorder>
+   <zorder>AIn5</zorder>
+   <zorder>A4</zorder>
+   <zorder>A3</zorder>
+   <zorder>B3</zorder>
+   <zorder>BIn6</zorder>
+   <zorder>BIn1</zorder>
+   <zorder>BIn2</zorder>
+   <zorder>BIn5</zorder>
+   <zorder>B1</zorder>
+   <zorder>B7</zorder>
+   <zorder>B6</zorder>
+   <zorder>BIn7</zorder>
+   <zorder>BIn8</zorder>
+   <zorder>B8</zorder>
+   <zorder>BIn4</zorder>
+   <zorder>B4</zorder>
+   <zorder>B2</zorder>
+   <zorder>BIn3</zorder>
+   <zorder>B5</zorder>
+   <zorder>DIn1</zorder>
+   <zorder>CIn2</zorder>
+   <zorder>CIn4</zorder>
+   <zorder>DIn2</zorder>
+   <zorder>CIn8</zorder>
+   <zorder>C8</zorder>
+   <zorder>CIn1</zorder>
+   <zorder>C6</zorder>
+   <zorder>C3</zorder>
+   <zorder>CIn3</zorder>
+   <zorder>C1</zorder>
+   <zorder>DIn6</zorder>
+   <zorder>DIn3</zorder>
+   <zorder>DIn5</zorder>
+   <zorder>D2</zorder>
+   <zorder>D7</zorder>
+   <zorder>C5</zorder>
+   <zorder>D8</zorder>
+   <zorder>D6</zorder>
+   <zorder>CIn7</zorder>
+   <zorder>CIn5</zorder>
+   <zorder>D5</zorder>
+   <zorder>D4</zorder>
+   <zorder>D1</zorder>
+   <zorder>CIn6</zorder>
+   <zorder>C2</zorder>
+   <zorder>D3</zorder>
+   <zorder>DIn7</zorder>
+   <zorder>C7</zorder>
+   <zorder>C4</zorder>
+   <zorder>DIn4</zorder>
+   <zorder>DIn8</zorder>
    <zorder>frame_5</zorder>
    <zorder>frame_6</zorder>
    <zorder>frame_7</zorder>
    <zorder>frame_8</zorder>
    <zorder>label_10</zorder>
-   <zorder>label_12</zorder>
+   <zorder>InADec</zorder>
    <zorder>label_9</zorder>
    <zorder>label_11</zorder>
    <zorder>label_15</zorder>
-   <zorder>label_13</zorder>
-   <zorder>label_14</zorder>
-   <zorder>label_16</zorder>
+   <zorder>InBDec</zorder>
+   <zorder>InDDec</zorder>
+   <zorder>InCDec</zorder>
    <zorder>line</zorder>
    <zorder>line_2</zorder>
    <zorder>line_3</zorder>
