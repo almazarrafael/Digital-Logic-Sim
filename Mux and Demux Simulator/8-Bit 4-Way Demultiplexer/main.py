@@ -4,6 +4,9 @@ import sys
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 class Ui_MainWindow(object):
+
+    sumA = 0
+
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1224, 792)
@@ -37,9 +40,9 @@ class Ui_MainWindow(object):
         self.A2.setDigitCount(1)
         self.A2.setSegmentStyle(QtWidgets.QLCDNumber.Flat)
         self.A2.setObjectName("A2")
-        self.outputBDec_2 = QtWidgets.QLabel(self.centralwidget)
-        self.outputBDec_2.setGeometry(QtCore.QRect(30, 630, 121, 16))
-        self.outputBDec_2.setObjectName("outputBDec_2")
+        self.outputCDec = QtWidgets.QLabel(self.centralwidget)
+        self.outputCDec.setGeometry(QtCore.QRect(30, 630, 121, 16))
+        self.outputCDec.setObjectName("outputCDec")
         self.AIn7 = QtWidgets.QCheckBox(self.centralwidget)
         self.AIn7.setGeometry(QtCore.QRect(400, 390, 16, 17))
         self.AIn7.setText("")
@@ -347,7 +350,7 @@ class Ui_MainWindow(object):
         self.frame_8.raise_()
         self.AIn8.raise_()
         self.A2.raise_()
-        self.outputBDec_2.raise_()
+        self.outputCDec.raise_()
         self.AIn7.raise_()
         self.A6.raise_()
         self.A5.raise_()
@@ -393,10 +396,152 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
+        self.outputA.display("00000000")
+        self.outputB.display("00000000")
+        self.outputC.display("00000000")
+        self.outputD.display("00000000")
+
+        # 00 - A, 01 - B, 10 - C, 11 - D
+
+        self.timer = QTimer()
+        self.timer.timeout.connect(self.demuxLogic)
+        self.timer.start(1)
+
+        # INPUT A SIGNALS
+        self.AIn1.stateChanged.connect(self.AUpdate1)
+        self.AIn2.stateChanged.connect(self.AUpdate2)
+        self.AIn3.stateChanged.connect(self.AUpdate3)
+        self.AIn4.stateChanged.connect(self.AUpdate4)
+        self.AIn5.stateChanged.connect(self.AUpdate5)
+        self.AIn6.stateChanged.connect(self.AUpdate6)
+        self.AIn7.stateChanged.connect(self.AUpdate7)
+        self.AIn8.stateChanged.connect(self.AUpdate8)
+
+        # SELECT SIGNALS
+        self.S0In.stateChanged.connect(self.S0Update)
+        self.S1In.stateChanged.connect(self.S1Update)
+
+    def demuxLogic(self):
+        self.outputA.display(format(0, "08b"))
+        self.outputADec.setText(str(0))
+
+        self.outputB.display(format(0, "08b"))
+        self.outputBDec.setText(str(0))
+
+        self.outputC.display(format(0, "08b"))
+        self.outputCDec.setText(str(0))
+
+        self.outputD.display(format(0, "08b"))
+        self.outputDDec.setText(str(0))
+
+        if self.S1.value() == 0:
+            if self.S0.value() == 0:
+                self.outputA.display(format(self.sumA, "08b"))
+                self.outputADec.setText(str(self.sumA))
+            elif self.S0.value() == 1:
+                self.outputB.display(format(self.sumA, "08b"))
+                self.outputBDec.setText(str(self.sumA))
+        elif self.S1.value() == 1:
+            if self.S0.value() == 0:
+                self.outputC.display(format(self.sumA, "08b"))
+                self.outputCDec.setText(str(self.sumA))
+            elif self.S0.value() == 1:
+                self.outputD.display(format(self.sumA, "08b"))
+                self.outputDDec.setText(str(self.sumA))
+
+    # Select I/O
+    def S0Update(self):
+        if self.S0In.isChecked():
+            self.S0.display(1)
+        else:
+            self.S0.display(0)
+        
+    def S1Update(self):
+        if self.S1In.isChecked():
+            self.S1.display(1)
+        else:
+            self.S1.display(0)
+
+    # Input A I/O
+    def updateSumALabel(self):
+        self.inputDec.setText(str(self.sumA))
+
+    def AUpdate1(self):
+        if self.AIn1.isChecked():
+            self.A1.display(1)
+            self.sumA += 128
+        else:
+            self.A1.display(0)
+            self.sumA -= 128
+        self.updateSumALabel()
+
+    def AUpdate2(self):
+        if self.AIn2.isChecked():
+            self.A2.display(1)
+            self.sumA += 64
+        else:
+            self.A2.display(0)
+            self.sumA -= 64
+        self.updateSumALabel()
+
+    def AUpdate3(self):
+        if self.AIn3.isChecked():
+            self.A3.display(1)
+            self.sumA += 32
+        else:
+            self.A3.display(0)
+            self.sumA -= 32
+        self.updateSumALabel()
+
+    def AUpdate4(self):
+        if self.AIn4.isChecked():
+            self.A4.display(1)
+            self.sumA += 16
+        else:
+            self.A4.display(0)
+            self.sumA -= 16
+        self.updateSumALabel()
+
+    def AUpdate5(self):
+        if self.AIn5.isChecked():
+            self.A5.display(1)
+            self.sumA += 8
+        else:
+            self.A5.display(0)
+            self.sumA -= 8
+        self.updateSumALabel()
+
+    def AUpdate6(self):
+        if self.AIn6.isChecked():
+            self.A6.display(1)
+            self.sumA += 4
+        else:
+            self.A6.display(0)
+            self.sumA -= 4
+        self.updateSumALabel()
+
+    def AUpdate7(self):
+        if self.AIn7.isChecked():
+            self.A7.display(1)
+            self.sumA += 2
+        else:
+            self.A7.display(0)
+            self.sumA -= 2
+        self.updateSumALabel()
+
+    def AUpdate8(self):
+        if self.AIn8.isChecked():
+            self.A8.display(1)
+            self.sumA += 1
+        else:
+            self.A8.display(0)
+            self.sumA -= 1
+        self.updateSumALabel()
+
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.outputBDec_2.setText(_translate("MainWindow", "0"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "8-Bit 4-Way Demultiplexer - Rafael Almazar"))
+        self.outputCDec.setText(_translate("MainWindow", "0"))
         self.label_11.setText(_translate("MainWindow", "Output D Decimal Value"))
         self.label_15.setText(_translate("MainWindow", "Output C Decimal Value:"))
         self.inputDec.setText(_translate("MainWindow", "0"))
