@@ -22,7 +22,7 @@ I made this in order to motivate myself to learn more digital design and to help
 Binary to Decimal Converter
 ___
 
-![Binary to Decimal](https://cdn.discordapp.com/attachments/563283331345678338/712890337349074994/unknown.png)
+<center> <img src= "https://cdn.discordapp.com/attachments/563283331345678338/712890337349074994/unknown.png" alt="Binary to Decimal"> </center>
 
 Logic Gates Simulator
 ___
