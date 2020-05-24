@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="Full-Adder">
+    <file>Full-Adder.png</file>
+  </qresource>
+  <qresource prefix="Half-Adder">
+    <file>Half-Adder.png</file>
+  </qresource>
+</RCC>
