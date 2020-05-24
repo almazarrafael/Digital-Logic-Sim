@@ -8,7 +8,8 @@ A variety of programs that simulate different digital logic components that I de
 1. __8-Bit Binary to Decimal Converter__ - Input a binary number by checking the checkboxes for corresponding 1s then the result will display as you go.
 2. __Logic Gates Simulator__ - Input two binary values into each logic gate to see the desired result of each gate.
 3. __Mux and Demux Simulator__ - Input select bits to choose which input signals you want to select. Mux selects from four inputs while demux selects from four outputs.
-4. __8-Bit Adder Simulator__ - Input 2 8-Bit binary numbers into input A and B and a Carry in flag then the program will provide you the corresponding decimal and binary values as well as Carry out.
+4. __Half and Full Adder Simulator__ - Input binary bits to see the expected output of sum and carry out.
+5. __8-Bit Adder Simulator__ - Input 2 8-Bit binary numbers into input A and B and a Carry in flag then the program will provide you the corresponding decimal and binary values as well as Carry out.
 
 ## installation
 
@@ -39,6 +40,11 @@ Demultiplexer Simulator
 ___
 
 ![Demultiplexer Simulator](https://cdn.discordapp.com/attachments/563283331345678338/713625874104320051/unknown.png)
+
+Half and Full Adder Simulator
+___
+
+![Half and Full Adder Simulator](https://cdn.discordapp.com/attachments/563283331345678338/713940842771120248/unknown.png)
 
 Adder Simulator
 ___
